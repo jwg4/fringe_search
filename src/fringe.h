@@ -1,5 +1,7 @@
 #include <stdint.h>
 
+#include "constants.h"
+
 typedef int64_t Fringe;
 typedef int16_t Row;
 
