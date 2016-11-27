@@ -1,3 +1,5 @@
+#include "fringe.h"
+
 inline Fringe add_some_T(Fringe current, int64_t piece, int16_t height, char check_second_row){
   first_empty = (current & EMPTY_MASK) >> EMPTY_OFFSET;
   piece <<= first_empty + 1;
