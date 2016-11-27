@@ -15,6 +15,14 @@ inline Fringe make_fringe(Row a, Row b, Row c, int16_t modulus, int16_t first_em
   );
 }
 
+inline Fringe make_piece(Row a, Row b, Row c) {
+return (
+    a &
+    (b << (WIDTH + 1)) &
+    (c << (WIDTH * 2 + 2)) &
+  );
+}
+
 Fringe overflow_mask = (
   1 
   & (1 << (WIDTH + 1))
