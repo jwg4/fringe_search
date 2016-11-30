@@ -19,7 +19,7 @@ inline Fringe make_piece(Row a, Row b, Row c) {
 return (
     a &
     (b << (WIDTH + 1)) &
-    (c << (WIDTH * 2 + 2)) &
+    (c << (WIDTH * 2 + 2))
   );
 }
 
