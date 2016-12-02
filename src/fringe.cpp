@@ -1,7 +1,7 @@
 #include "fringe.h"
 
 inline Fringe add_some_T(Fringe current, int64_t piece, int16_t height, char check_second_row){
-  first_empty = (current & FIRST_BLANK_MASK) >> FIRST_BLANK_OFFSET;
+  int64_t first_empty = (current & FIRST_BLANK_MASK) >> FIRST_BLANK_OFFSET;
   piece <<= first_empty + 1;
   if (piece & padding_mask) {
     return 0;
