@@ -1,9 +1,10 @@
 #define WIDTH 13
 #define CELL_BIT_WIDTH (3 * WIDTH)
 #define ROW_MASK ((1 << WIDTH) - 1)
-#define FIRST_TWO_ROWS_MASK ((ROW_MASK << 1) & (ROW_MASK << (WIDTH + 2))) 
+#define FIRST_TWO_ROWS_MASK ((ROW_MASK << 1) | (ROW_MASK << (WIDTH + 2))) 
 
 #define PADDING_BIT_WIDTH 4
+#define PADDING_MASK (1L | (1L << (WIDTH + 1)) | (1L << (2 * WIDTH + 2))) 
 
 #define MODULUS_BIT_WIDTH 2
 #define MODULUS 4
