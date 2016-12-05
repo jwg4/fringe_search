@@ -23,13 +23,6 @@ return (
   );
 }
 
-Fringe overflow_mask = (
-  1 
-  & (1 << (WIDTH + 1))
-  & (1 << (2 * WIDTH + 2))
-  & (1 << (3 * WIDTH + 3))
-);
-
 Fringe add_T_1(Fringe);
 Fringe add_T_2(Fringe);
 Fringe add_T_2(Fringe);
