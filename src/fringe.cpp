@@ -23,7 +23,7 @@ inline Fringe add_some_T(Fringe current, int64_t piece, int16_t height, char che
 }
 
 Fringe add_T_1(Fringe current){
-  const int64_T piece = make_piece(14, 4, 0);
+  const int64_t piece = make_piece(14, 4, 0);
   return add_some_T(current, piece, 3, 0);
 }
 
