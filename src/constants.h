@@ -4,7 +4,7 @@
 #define FIRST_TWO_ROWS_MASK ((ROW_MASK << 1) | (ROW_MASK << (WIDTH + 2))) 
 
 #define PADDING_BIT_WIDTH 4
-#define PADDING_MASK (1L | (1L << (WIDTH + 1)) | (1L << (2 * WIDTH + 2))) 
+#define PADDING_MASK (1L | (1L << (WIDTH + 1)) | (1L << (2 * WIDTH + 2)) | (1L << (3 * WIDTH + 3))) 
 
 #define MODULUS_BIT_WIDTH 2
 #define MODULUS 4
