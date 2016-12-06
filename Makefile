@@ -18,4 +18,4 @@ obj:
 build:
 	mkdir build
 
-.PHONY: all
+.PHONY: all test
