@@ -1,4 +1,7 @@
-all: fringe_search_13
+all: fringe_search_13 test
+
+test: tests/test_fringe.py obj/fringe13.o
+	python -m unittest tests.test_fringe
 
 fringe_search_13: obj/fringe_search_13.o obj/fringe_13.o build
 	gcc obj/fringe_search_13.o obj/fringe_13.o -o build/fringe_search_13
