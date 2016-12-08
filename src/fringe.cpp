@@ -41,3 +41,16 @@ Fringe add_T_4(Fringe current){
   const int64_t piece = make_piece(2, 6, 2);
   return add_some_T(current, piece, 1, 0);
 }
+
+std::vector<Fringe> add_all_T(Fringe current){
+  std::vector<Fringe> ret;
+  Fringe t1 = add_T_1(current);
+  if (t1) { ret.push_back(t1); }
+  Fringe t2 = add_T_2(current);
+  if (t2) { ret.push_back(t2); }
+  Fringe t3 = add_T_3(current);
+  if (t3) { ret.push_back(t3); }
+  Fringe t4 = add_T_4(current);
+  if (t4) { ret.push_back(t4); }
+  return(ret);
+}
