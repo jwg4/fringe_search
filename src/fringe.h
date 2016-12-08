@@ -1,4 +1,5 @@
 #include <stdint.h>
+#include <vector>
 
 #include "constants.h"
 
@@ -27,3 +28,5 @@ Fringe add_T_1(Fringe);
 Fringe add_T_2(Fringe);
 Fringe add_T_2(Fringe);
 Fringe add_T_2(Fringe);
+
+std::vector<Fringe> add_all_T(Fringe);
